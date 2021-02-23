@@ -1,0 +1,29 @@
+.header-block{
+    height: 100vh;
+    background-image: url(/assets/img/header-bg.jpg);
+    background-size: cover;
+    background-position:0vh
+    // background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(.jpg), #EDEDED;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    text-align: center;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    list-style: none;
+}
+
+.header-menu__item {
+    padding: 13px 0;
+}

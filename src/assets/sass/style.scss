@@ -1,4 +1,25 @@
-h1{
-    color: red;
-    font-size: 55px;
+
+//Bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/containers";
+
+//Blocks
+@import "_reset";
+@import "blocks/header";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
 }
