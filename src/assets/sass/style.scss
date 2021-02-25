@@ -1,4 +1,4 @@
-
+@import "vars";
 //Bootstrap
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "../../../node_modules/bootstrap/scss/variables";
@@ -9,6 +9,8 @@
 //Blocks
 @import "_reset";
 @import "blocks/header";
+@import "blocks/discription-block";
+@import "blocks/collection-block";
 
 *,
 *:before,
@@ -16,6 +18,9 @@
   box-sizing: border-box;
 }
 html {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 15px;
 }
 
