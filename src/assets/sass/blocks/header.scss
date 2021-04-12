@@ -32,13 +32,25 @@
 .header-menu__item {
   padding: 13px 0;
 
-  font-size: 14px;
+  font-size: rfs-fluid-value(1rem);
   line-height: 150%;
 
   border-right: 1px solid $white;
 
+  transition-duration: 0.2s;
   &:nth-last-child(1) {
     border-right: none;
+  }
+
+  &:hover {
+    transition-duration: 0.2s;
+    background-color: darken($white, 20);
+    cursor: pointer;
+
+    a {
+      color: darken($black, 20);
+      transition-duration: 0.2s;
+    }
   }
 
   @media screen and (max-width: 426px) {
@@ -56,11 +68,6 @@
   height: 100%;
 
   text-decoration: none;
-  transition-duration: 0.3s;
-  &:hover {
-    color: darken($white, 20);
-    transition-duration: 0.3s;
-  }
 }
 
 .buttons {
@@ -72,13 +79,14 @@
 .button {
   padding: 15px 30px;
   background-color: $accent;
-  &:nth-last-child(1) {
-    margin-left: 35px;
-    @media screen and (max-width: 376px) {
-      margin-left: 0px;
-      margin-top: 10px;
-      padding: 15px 40px;
-    }
+}
+
+.button-margin-left {
+  margin-left: 35px;
+  @media screen and (max-width: 376px) {
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 15px 40px;
   }
 }
 
@@ -86,7 +94,9 @@
   @extend .menu-item__link;
   display: inline;
   text-transform: uppercase;
+  transition-duration: 0.2s;
   &:hover {
     background-color: darken($accent, 20);
+    transition-duration: 0.2s;
   }
 }

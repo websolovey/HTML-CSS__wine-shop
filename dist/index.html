@@ -39,8 +39,8 @@
           </ul>
         </nav>
         <div class="buttons">
-          <a href="" class="button col-md-auto button-link col-md-auto">винная карта</a>
-          <a href="" class="button col-md-auto button-link col-md-auto" >дегустация</a>
+          <a href="" class="button col-md-auto button-link ">винная карта</a>
+          <a href="" class="button col-md-auto button-link button-margin-left" >дегустация</a>
         </div>
       </div>
     </header>
@@ -52,27 +52,131 @@
             <img src="../../assets/img/discr-img.png" alt="" class="image img-fluid col-2">
         </div>
     </section>    <section class="collection-block">
-      <div class="container">
-        <h3 class="collection-subtitle">Новинки коллекций</h3>
-        <h2 class="collection-title col-4">Март 1980 Урожай Марселя</h2>
-        <span class="line"></span>
-        <p class="collection-text col-5">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim
-          tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit
-          sed fermentum. Felis adipiscing morbi sodales ac.
-        </p>
-        <table cols="2" class="col-5">
-            <tr class="row">
-                <td class="col-2">1880</td>
+      <div class="container row container-between">
+        <div class="collection-container row col-lg-5">
+          <h3 class="collection-subtitle">Новинки коллекций</h3>
+          <h2 class="collection-title col-md-9 ">Март 1980 <br/>Урожай Марселя</h2>
+          <span class="line col-4"></span>
+          <p class="collection-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim
+            tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit
+            sed fermentum. Felis adipiscing morbi sodales ac.
+          </p>
+          <table cols="2" class="collection-block_table col-md">
+            <tbody>
+              <tr class="row">
+                <td class="col-2" align="center">1880</td>
                 <td class="col-10">Colli Euganei Bianco Ca' Lustra 1980
                     <span>Красочная бутылка вина из Марселя</span>
                 </td>
             </tr>
-        </table>
-        <p class="collection-text col-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
-        <a href="" class="button col-md-auto button-link ">узнать подробности</a>
+            <tr class="row">
+                <td class="col-2" align="center">1880</td>
+                <td class="col-10">Colli Euganei Bianco Ca' Lustra 1980
+                    <span>Красочная бутылка вина из Марселя</span>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="col-2" align="center">1880</td>
+                <td class="col-10">Colli Euganei Bianco Ca' Lustra 1980
+                    <span>Красочная бутылка вина из Марселя</span>
+                </td>
+            </tr>
+            </tbody>
+    
+          </table>
+          <p class="collection-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit sed fermentum. Felis adipiscing morbi sodales ac. </p>
+          <a href="" class="button col-6 button-link ">узнать подробности</a>
+        </div>
+        <div class="slider row col-lg-6">
+          <img class="collection-img col" src="../../assets/img/slider-img-1.jpg" alt="">
+          <img class="collection-img col-6" src="../../assets/img/slider-img-2.jpg" alt="">
+          <img class="collection-img col-6" src="../../assets/img/slider-img-3.jpg" alt="">
+        </div>
+      </div>
+     
+    </section>
+    <section class="form-block">
+      <img
+        src="../../assets/img/left-image.png"
+        alt=""
+        class="form-block__image left-image"
+      />
+      <img
+        src="../../assets/img/right-image.png"
+        alt=""
+        class="form-block__image right-image "
+      />
+      <div class="form-block__container container row">
+        <h3 class="form-block__title col-4">Запись на дегустацию<span></span></h3>
+    
+        <p class="form-block__text col-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat enim
+          tortor in hac id imperdiet adipiscing. Pellentesque nisi, mi sit non sit
+          sed fermentum.
+        </p>
+        <form class="form-block__form col-6 row" action="" method="POST">
+          <div class="name-and-email">
+            <div class="form__group form__group--name">
+              <input id="name" class="form__input" type="text" placeholder=" " />
+              <label for="" class="form__label">Имя</label>
+            </div>
+            <div class="form__group form__group--email">
+              <input id="email" class="form__input" type="email" placeholder=" " />
+              <label for="" class="form__label">Email</label>
+            </div>
+          </div>
+          <div class="form__group form__group--address col">
+            <input
+              id="address"
+              class="form__input col"
+              type="text"
+              placeholder=" "
+            />
+            <label for="" class="form__label">Адрес</label>
+          </div>
+    
+          <button class="form-block__button col-12 button " type="text">записаться</button>
+        </form>
       </div>
     </section>
     
+    <section class="footer">
+      <footer class="footer-wrapper container">
+        <div class="row">
+          <nav class="footer-nav">
+            <ul class="footer-nav__list row">
+              <li class="footer-nav__list-item menu-item col">Главная</li>
+              <li class="footer-nav__list-item menu-item col">Каталог</li>
+              <li class="footer-nav__list-item menu-item col">Поставщики</li>
+              <li class="footer-nav__list-item menu-item col">Коллекции</li>
+              <li class="footer-nav__list-item menu-item col">Дегустация</li>
+              <li class="footer-nav__list-item menu-item col">Коллекция 2020</li>
+              <li class="footer-nav__list-item menu-item col">Контакты</li>
+            </ul>
+          </nav>
+          <div class="footer-contacts">
+            <ul class="footer-contacts__list row">
+              <li class="footer-contacts__list-item col">винный бутик LE CORTE</li>
+              <li class="footer-contacts__list-item col">8 (812) 123-45-67</li>
+              <li class="footer-contacts__list-item col">
+                <ul class="footer-contacts__list-social row">
+                  <li class="footer-contacts__list-item social-list__item col">
+                    vk
+                  </li>
+                  <li class="footer-contacts__list-item social-list__item col">
+                    inst
+                  </li>
+                  <li class="footer-contacts__list-item social-list__item col">
+                    fb
+                  </li>
+                </ul>
+              </li>
+              <li class="footer-contacts__list-item col">© le-corte.ru</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </section>
 </body>
 </html>

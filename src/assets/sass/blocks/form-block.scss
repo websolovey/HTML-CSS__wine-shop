@@ -1,0 +1,194 @@
+.form-block {
+  background-color: $black;
+  position: relative;
+}
+
+.form-block__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 90px 0 100px;
+}
+
+.form-block__title {
+  flex-basis: 100%;
+  text-align: center;
+  color: $white;
+  font-size: rfs-fluid-value(2.2rem);
+  line-height: 150%;
+  font-family: Playfair Display;
+  font-weight: 700;
+  margin-bottom: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 1px solid $white;
+    width: 118px;
+    background-color: $white;
+    position: absolute;
+    top: 57%;
+    left: 21%;
+  }
+  &::after {
+    content: "";
+    border: 1px solid $white;
+    width: 118px;
+    background-color: $white;
+    position: absolute;
+    top: 57%;
+    right: 21%;
+  }
+
+  span {
+    border: 1px solid $white;
+    width: 118px;
+    background-color: $white;
+    position: absolute;
+    top: 164%;
+    left: 45.5%;
+  }
+}
+
+.form-block__text {
+  flex-basis: 51%;
+  margin: 5px auto 0;
+  font-size: rfs-fluid-value(1rem);
+  line-height: 1.7rem;
+  color: $white;
+  text-align: center;
+}
+
+.form-block__form {
+  border: 1px solid $white;
+  border-top: none;
+  flex-basis: 100%;
+  margin: 0 auto;
+  padding: 100px 285px 0;
+  position: relative;
+
+  &::placeholder {
+    color: $white;
+  }
+}
+
+.form-block__button {
+  margin: 65px 0 70px;
+  padding: 15px 30px;
+  background: transparent;
+  border: 1px solid $white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  font-size: rfs-fluid-value(1rem);
+  font-weight: 500;
+  margin-bottom: 80px;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: darken($white, 20);
+    color: darken($black, 20);
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+}
+
+.form__group {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+
+  padding-bottom: 15px;
+
+  font-size: rfs-fluid-value(1rem);
+  font-family: Montserrat;
+  font-weight: 500;
+
+  border: none;
+  border-bottom: 1px solid $white;
+
+  background-color: transparent;
+
+  color: $white;
+
+  transition: 0.3s;
+
+  &:focus ~ .form__label,
+  &:not(:placeholder-shown) ~ .form__label {
+    font-size: rfs-fluid-value(0.8rem);
+    line-height: 1.4rem;
+    top: -20px;
+  }
+}
+
+.form__label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: rfs-fluid-value(1rem);
+  line-height: 2rem;
+
+  color: $white;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: 0.3s;
+}
+
+.form__group {
+  position: relative;
+
+  margin-bottom: 30px;
+}
+
+.name-and-email {
+  position: relative;
+  margin-bottom: 93px;
+}
+
+.form__group--email {
+  width: 48%;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form__group--name {
+  width: 48%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form__group--address {
+  position: absolute;
+  top: 172px;
+  left: 274px;
+  width: 58.5%;
+
+  label {
+    left: 13px;
+  }
+}
+
+.form-block__image {
+  position: absolute;
+  max-width: 260px;
+}
+
+.left-image {
+  left: 5%;
+  top: 5%;
+  height: 260px;
+  width: 100%;
+}
+
+.right-image {
+  right: 5%;
+  top: 7%;
+  height: 200px;
+  width: 100%;
+}

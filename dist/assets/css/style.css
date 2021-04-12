@@ -1429,13 +1429,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .header-menu__item {
     padding: 13px 0;
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 150%;
     border-right: 1px solid #fff;
+    transition-duration: 0.2s;
 }
 
 .header-menu__item:nth-last-child(1) {
     border-right: none;
+}
+
+.header-menu__item:hover {
+    transition-duration: 0.2s;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.header-menu__item:hover a {
+    color: black;
+    transition-duration: 0.2s;
 }
 
 @media screen and (max-width: 426px) {
@@ -1454,12 +1466,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     display: block;
     height: 100%;
     text-decoration: none;
-    transition-duration: 0.3s;
-}
-
-.menu-item__link:hover, .button-link:hover {
-    color: #cccccc;
-    transition-duration: 0.3s;
 }
 
 .buttons {
@@ -1474,12 +1480,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     background-color: #998431;
 }
 
-.button:nth-last-child(1) {
+.button-margin-left {
     margin-left: 35px;
 }
 
 @media screen and (max-width: 376px) {
-    .button:nth-last-child(1) {
+    .button-margin-left {
         margin-left: 0px;
         margin-top: 10px;
         padding: 15px 40px;
@@ -1489,10 +1495,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .button-link {
     display: inline;
     text-transform: uppercase;
+    transition-duration: 0.2s;
 }
 
 .button-link:hover {
     background-color: #4c4118;
+    transition-duration: 0.2s;
 }
 
 .discription-block {
@@ -1514,7 +1522,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     font-family: Playfair Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: calc(1.345rem + 1.14vw);
     line-height: 150%;
     margin: 0 auto;
     color: #fff;
@@ -1542,6 +1550,287 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     margin: 0 auto;
     max-width: 160px;
     min-width: 100px;
+}
+
+.collection-block {
+    padding: 140px 0;
+}
+
+.container-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection-container .button {
+    margin-left: 0;
+    height: 50px;
+}
+
+.collection-container .line {
+    width: 160px;
+    border: none;
+    border-top: 1px solid #282828;
+    margin: initial;
+}
+
+.collection-block_table tr {
+    border-bottom: 1px solid #282828;
+}
+
+.collection-block_table tr td {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.collection-block_table tr td:nth-child(1) {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #282828;
+    margin-top: 20px;
+}
+
+.collection-block_table tr td:nth-child(2) {
+    border-left: 1px solid #282828;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.collection-block_table tr td:nth-child(2) span {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #282828;
+    margin: 5px 0 15px;
+}
+
+.collection-subtitle {
+    font-size: 1rem;
+    color: #282828;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.collection-title {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(1.375rem + 1.5vw);
+    padding: 0;
+}
+
+.collection-text {
+    padding: 0;
+    font-size: 1rem;
+    color: #282828;
+    margin: 30px 0;
+}
+
+.form-block {
+    background-color: #282828;
+    position: relative;
+}
+
+.form-block__container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 90px 0 100px;
+}
+
+.form-block__title {
+    flex-basis: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: calc(1.345rem + 1.14vw);
+    line-height: 150%;
+    font-family: Playfair Display;
+    font-weight: 700;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.form-block__title::before {
+    content: "";
+    border: 1px solid #fff;
+    width: 118px;
+    background-color: #fff;
+    position: absolute;
+    top: 57%;
+    left: 21%;
+}
+
+.form-block__title::after {
+    content: "";
+    border: 1px solid #fff;
+    width: 118px;
+    background-color: #fff;
+    position: absolute;
+    top: 57%;
+    right: 21%;
+}
+
+.form-block__title span {
+    border: 1px solid #fff;
+    width: 118px;
+    background-color: #fff;
+    position: absolute;
+    top: 164%;
+    left: 45.5%;
+}
+
+.form-block__text {
+    flex-basis: 51%;
+    margin: 5px auto 0;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: #fff;
+    text-align: center;
+}
+
+.form-block__form {
+    border: 1px solid #fff;
+    border-top: none;
+    flex-basis: 100%;
+    margin: 0 auto;
+    padding: 100px 285px 0;
+    position: relative;
+}
+
+.form-block__form::-moz-placeholder {
+    color: #fff;
+}
+
+.form-block__form:-ms-input-placeholder {
+    color: #fff;
+}
+
+.form-block__form::placeholder {
+    color: #fff;
+}
+
+.form-block__button {
+    margin: 65px 0 70px;
+    padding: 15px 30px;
+    background: transparent;
+    border: 1px solid #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition-duration: 0.2s;
+}
+
+.form-block__button:hover {
+    background-color: #cccccc;
+    color: black;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__input {
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.form__input:not(:-moz-placeholder-shown) ~ .form__label {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    top: -20px;
+}
+
+.form__input:not(:-ms-input-placeholder) ~ .form__label {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    top: -20px;
+}
+
+.form__input:focus ~ .form__label,
+  .form__input:not(:placeholder-shown) ~ .form__label {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    top: -20px;
+}
+
+.form__label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.form__group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.name-and-email {
+    position: relative;
+    margin-bottom: 93px;
+}
+
+.form__group--email {
+    width: 48%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.form__group--name {
+    width: 48%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form__group--address {
+    position: absolute;
+    top: 172px;
+    left: 274px;
+    width: 58.5%;
+}
+
+.form__group--address label {
+    left: 13px;
+}
+
+.form-block__image {
+    position: absolute;
+    max-width: 260px;
+}
+
+.left-image {
+    left: 5%;
+    top: 5%;
+    height: 260px;
+    width: 100%;
+}
+
+.right-image {
+    right: 5%;
+    top: 7%;
+    height: 200px;
+    width: 100%;
 }
 
 *,
