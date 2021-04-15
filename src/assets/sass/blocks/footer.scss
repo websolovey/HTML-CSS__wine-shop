@@ -1,0 +1,40 @@
+.footer {
+  background-color: $accent;
+  padding: 50px 0;
+}
+
+.footer-nav__list {
+  padding: 20px 0 20px 53px;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+}
+
+.menu-item__link{
+    &:hover{
+        color: darken($white, 20%)
+    }
+}
+
+.footer-contacts {
+  
+  border-bottom: 1px solid white;
+}
+
+.footer-contacts__list-item {
+  @extend .header-menu__item;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: rfs-fluid-value(1rem);
+  line-height: 150%;
+  color: $white;
+
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+
+  &:hover {
+    background-color: transparent;
+    cursor: default;
+  }
+}

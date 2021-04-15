@@ -1427,7 +1427,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     list-style: none;
 }
 
-.header-menu__item {
+.header-menu__item, .footer-contacts__list-item {
     padding: 13px 0;
     font-size: 1rem;
     line-height: 150%;
@@ -1435,28 +1435,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     transition-duration: 0.2s;
 }
 
-.header-menu__item:nth-last-child(1) {
+.header-menu__item:nth-last-child(1), .footer-contacts__list-item:nth-last-child(1) {
     border-right: none;
 }
 
-.header-menu__item:hover {
+.header-menu__item:hover, .footer-contacts__list-item:hover {
     transition-duration: 0.2s;
     background-color: #cccccc;
     cursor: pointer;
 }
 
-.header-menu__item:hover a {
+.header-menu__item:hover a, .footer-contacts__list-item:hover a {
     color: black;
     transition-duration: 0.2s;
 }
 
 @media screen and (max-width: 426px) {
-    .header-menu__item {
+    .header-menu__item, .footer-contacts__list-item {
         border-right: none;
         border-bottom: 1px solid #fff;
     }
 
-    .header-menu__item:nth-last-child(1) {
+    .header-menu__item:nth-last-child(1), .footer-contacts__list-item:nth-last-child(1) {
         border-bottom: none;
     }
 }
@@ -1554,6 +1554,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 
 .collection-block {
     padding: 140px 0;
+    background-color: #E6E3C4;
 }
 
 .container-between {
@@ -1831,6 +1832,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     top: 7%;
     height: 200px;
     width: 100%;
+}
+
+.footer {
+    background-color: #998431;
+    padding: 50px 0;
+}
+
+.footer-nav__list {
+    padding: 20px 0 20px 53px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.menu-item__link:hover, .button-link:hover {
+    color: #cccccc;
+}
+
+.footer-contacts {
+    border-bottom: 1px solid white;
+}
+
+.footer-contacts__list-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.footer-contacts__list-item:hover {
+    background-color: transparent;
+    cursor: default;
 }
 
 *,
